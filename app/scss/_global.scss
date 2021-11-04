@@ -1,4 +1,4 @@
-.container {
+.productcasePageContainer {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -19,21 +19,14 @@ button {
 
 body {
   // min-width: 320px;
-  min-width: 1920px;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
+.productcasePage {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;color: #544d46;
 
-.main {
-  flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
 }
