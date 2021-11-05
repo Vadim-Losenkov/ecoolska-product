@@ -9,18 +9,20 @@
   margin-bottom: 64px;
   &__inner {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 24px;
-    border-bottom: 1px solid  #544d46;
+    border-bottom: 1px solid #544d46;
   }
-  
+
   &__images {
     display: flex;
+    flex: none;
     margin-right: 32px;
   }
   &__info {
     padding-top: 64px;
   }
-  
+
   &__images-thumbnails {
     margin-right: 32px;
     img {
@@ -41,7 +43,7 @@
       height: 672px;
     }
   }
-  
+
   &__info-box {
     display: flex;
     justify-content: space-between;
@@ -57,7 +59,7 @@
       background-repeat: no-repeat;
     }
   }
-  
+
   &__title {
     font-weight: 300;
     font-size: 32px;
@@ -71,28 +73,29 @@
       font-weight: 700;
     }
   }
-  
+
   &__tags {
     display: flex;
     margin-bottom: 48px;
+    flex-wrap: wrap;
   }
   &__tag {
     padding: 8px;
     font-size: 16px;
     line-height: 16px;
-    opacity: .5;
+    opacity: 0.5;
     color: #544d46;
-    border: 1px solid  #544d46;
-    & + .productcaseItem__tag {
-      margin-left: 8px;
-    }
+    border: 1px solid #544d46;
+    margin-bottom: 5px;
+    margin-left: 8px;
     span {
       font-weight: 600;
     }
   }
-  
+
   &__bets {
     display: flex;
+    flex-wrap: wrap;
   }
   &__bets-button {
     background-color: #111;
@@ -100,7 +103,6 @@
     color: #fff;
     font-size: 20px;
     line-height: 16px;
-    margin-left: 16px;
     border-radius: 0;
   }
   &__bets-info {
@@ -111,6 +113,8 @@
     text-align: center;
     background-color: rgba(84, 77, 70, 0.1);
     padding: 6px 26px;
+    margin-right: 16px;
+    margin-bottom: 6px;
     span {
       margin-top: 3px;
       text-align: center;
@@ -124,6 +128,7 @@
 }
 
 .productcaseInfo {
+  margin-bottom: 69px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -133,11 +138,48 @@
   }
   &__col {
     max-width: 376px;
+    padding-right: 15px;
+    min-width: 300px;
   }
   &__box {
     max-width: 682px;
   }
 }
 
+.productcaseSimilar {
+  margin-bottom: 125px;
+  
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    max-width: 274px;
+  }
+  &__item + .productcaseSimilar__item {
+    margin-left: 32px;
+  }
+
+  &__item-image {
+    height: 376px;
+    width: 274px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  &__item-name {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #544d46;
+    margin-bottom: 16px;
+  }
+  &__item-price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #544d46;
+  }
+}
 
 @import "media";

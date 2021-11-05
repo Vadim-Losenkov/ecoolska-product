@@ -1,0 +1,72 @@
+@media (max-width: 1200px) {
+  .productcaseItem {
+    &__images-picture {
+      img {
+        width: 239px;
+        height: 336px;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .productcaseItem {
+    &__inner {
+      display: block;
+    }
+    &__images {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__images-thumbnails {
+      display: flex;
+      img {
+        margin-bottom: 0;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+    }
+    &__images-picture {
+      order: -1;
+      img {
+        width: 478px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .productcaseInfo {
+    &__col {
+      margin-bottom: 32px;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .productcaseText,
+  .productcaseCounterList .productcaseCounterList-item,
+  .productcaseMarkedList .productcaseMarkedList-item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 570px) {
+  .productcaseItem {
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    &__info-box {
+      flex-direction: column;
+      margin-bottom: 27px;
+    }
+    &__bets-button {
+      padding: 15px 35px;
+    }
+  }
+}
