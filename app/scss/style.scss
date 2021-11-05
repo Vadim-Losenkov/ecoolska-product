@@ -4,16 +4,140 @@
 @import "global";
 @import "libs";
 
-.productcasePage {
+.productcaseItem {
+  margin-top: 103px;
+  margin-bottom: 64px;
+  &__inner {
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid  #544d46;
+  }
   
+  &__images {
+    display: flex;
+    margin-right: 32px;
+  }
+  &__info {
+    padding-top: 64px;
+  }
+  
+  &__images-thumbnails {
+    margin-right: 32px;
+    img {
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 88px;
+      margin-bottom: 8px;
+      &.active {
+        border: 1px solid #544d46;
+      }
+    }
+  }
+  &__images-picture {
+    img {
+      width: 478px;
+      height: 672px;
+    }
+  }
+  
+  &__info-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__benefits {
+    display: flex;
+    flex: none;
+    img {
+      width: 70px;
+      height: 64px;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  &__title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 27px;
+    max-width: 380px;
+    width: 100%;
+    padding-right: 10px;
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+  
+  &__tags {
+    display: flex;
+    margin-bottom: 48px;
+  }
+  &__tag {
+    padding: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    opacity: .5;
+    color: #544d46;
+    border: 1px solid  #544d46;
+    & + .productcaseItem__tag {
+      margin-left: 8px;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+  
+  &__bets {
+    display: flex;
+  }
+  &__bets-button {
+    background-color: #111;
+    padding: 28px 62px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 16px;
+    margin-left: 16px;
+    border-radius: 0;
+  }
+  &__bets-info {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #544d46;
+    text-align: center;
+    background-color: rgba(84, 77, 70, 0.1);
+    padding: 6px 26px;
+    span {
+      margin-top: 3px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px;
+      color: #544d46;
+      font-weight: 400;
+      display: block;
+    }
+  }
 }
 
-
-
-
-
-
-
+.productcaseInfo {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box-block {
+    margin-bottom: 53px;
+  }
+  &__col {
+    max-width: 376px;
+  }
+  &__box {
+    max-width: 682px;
+  }
+}
 
 
 @import "media";

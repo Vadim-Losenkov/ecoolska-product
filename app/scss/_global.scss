@@ -20,6 +20,7 @@ button {
 body {
   // min-width: 320px;
   overflow-x: hidden;
+  min-width: 1920px;
   min-height: 100vh;
 }
 
@@ -29,4 +30,19 @@ body {
   font-size: 20px;
   line-height: 26px;color: #544d46;
 
+}
+
+.productcaseTitle {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  color: #544D46;
+  margin-bottom: 23px;
+}
+
+.productcaseText {
+  font-size: 20px;
+  line-height: 26px;
+  color: #544D46;
+  margin-bottom: 16px;
 }
