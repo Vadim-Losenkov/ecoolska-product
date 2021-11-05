@@ -150,10 +150,11 @@
   margin-bottom: 125px;
   
   &__inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 274px);
+    grid-gap: 32px;
   }
   &__item {
-    max-width: 274px;
   }
   &__item + .productcaseSimilar__item {
     margin-left: 32px;
